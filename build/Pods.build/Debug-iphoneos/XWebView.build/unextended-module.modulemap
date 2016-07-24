@@ -1,0 +1,10 @@
+framework module XWebView {
+  umbrella header "XWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module XWebView.__Swift {
+    exclude header "XWebView-Swift.h"
+}

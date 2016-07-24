@@ -1,0 +1,9 @@
+module libxmlModuleDevice  {
+    header "$(SDKROOT)/usr/include/libxml2/tree.h"
+    export *
+}
+
+module libxmlModuleSimulator  {
+    header "$(SDKROOT)/usr/include/libxml2/tree.h"
+    export *
+}

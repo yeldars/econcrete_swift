@@ -1,0 +1,10 @@
+framework module FileBrowser {
+  umbrella header "FileBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module FileBrowser.Swift {
+    header "FileBrowser-Swift.h"
+}

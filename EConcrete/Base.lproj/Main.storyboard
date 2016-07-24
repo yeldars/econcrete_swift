@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9PS-ra-Gt0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--E-Concrete-->
+        <scene sceneID="akN-m1-cCC">
+            <objects>
+                <viewController id="cRQ-yb-GSL" customClass="LoginVC" customModule="EConcrete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OYp-Df-OYh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UZt-TS-OF1">
+                                <rect key="frame" x="20" y="222" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43698145782390063" green="0.67535392968986763" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Войти">
+                                    <color key="titleColor" red="1" green="0.94453923954647989" blue="0.96300026389213234" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="q4i-D9-lI1" kind="modal" identifier="login" id="BzB-gp-wTI"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail" textAlignment="natural" minimumFontSize="17" id="whe-jI-YFb">
+                                <rect key="frame" x="20" y="260" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите логин и пароль" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vYS-9p-heP">
+                                <rect key="frame" x="20" y="412" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.11059291587876117" blue="0.37812128129427586" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="md-logo.png" id="Eeo-zh-Oio">
+                                <rect key="frame" x="20" y="9" width="280" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" id="N1R-Mv-sn0">
+                                <rect key="frame" x="20" y="298" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36689307573005436" green="0.46249150209529966" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="E-Concrete" id="Zox-sV-312"/>
+                    <connections>
+                        <outlet property="EnterButton" destination="UZt-TS-OF1" id="EJb-fd-tMb"/>
+                        <outlet property="LoginInput" destination="whe-jI-YFb" id="06R-YP-vOH"/>
+                        <outlet property="Logo" destination="Eeo-zh-Oio" id="HrL-7s-UBv"/>
+                        <outlet property="MessageLabel" destination="vYS-9p-heP" id="liM-qY-RQZ"/>
+                        <outlet property="PasswordInput" destination="N1R-Mv-sn0" id="pd3-MP-Pp5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBV-a5-iPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563" y="-859"/>
+        </scene>
+        <!--E-Concrete-->
+        <scene sceneID="TFZ-TE-0BA">
+            <objects>
+                <viewController title="E-Concrete" id="YH8-QW-ZBO" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Off-o5-Ria">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l2X-bL-uwa"/>
+                    <connections>
+                        <segue destination="hHW-Qk-Sgl" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="cwv-Hn-hlC"/>
+                        <segue destination="V3c-Hq-QgJ" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="b6C-dp-Giv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xcs-6V-EvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="-99"/>
+        </scene>
+        <!--Главное меню-->
+        <scene sceneID="Euv-Ai-Lhu">
+            <objects>
+                <tableViewController title="Главное меню" modalPresentationStyle="currentContext" hidesBottomBarWhenPushed="YES" id="hHW-Qk-Sgl" customClass="BackTableVC" customModule="EConcrete" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ItC-7w-GQn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="1" green="0.94453923949999996" blue="0.96300026390000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="cell" id="mUT-wI-wTq">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mUT-wI-wTq" id="jrp-iq-8RA">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.5647093608" green="0.72356951069999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="hHW-Qk-Sgl" id="9mn-lH-jGD"/>
+                            <outlet property="delegate" destination="hHW-Qk-Sgl" id="IYZ-PV-aW5"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPx-XC-yiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563" y="-99"/>
+        </scene>
+        <!--E-Concrete-->
+        <scene sceneID="OT5-YE-dKc">
+            <objects>
+                <viewController id="uGW-be-Sov" customClass="ViewController" customModule="EConcrete" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qC1-UT-c7z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="E-Concrete" id="lyW-sO-wDX">
+                        <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="kcx-Vb-Pvt">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Выход" id="YV1-LR-7qT">
+                            <connections>
+                                <segue destination="9PS-ra-Gt0" kind="modal" identifier="exit" id="hSR-UO-QdW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="OpenMenu" destination="kcx-Vb-Pvt" id="ws0-ae-fVb"/>
+                        <segue destination="Ddv-xT-oi5" kind="modal" identifier="map" id="0WL-zi-A51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5c-QA-xGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1108" y="-99"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oB6-xT-cze">
+            <objects>
+                <navigationController id="V3c-Hq-QgJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n9X-DC-fhb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uGW-be-Sov" kind="relationship" relationship="rootViewController" id="UuI-zL-Vav"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9i-OO-WCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672" y="-99"/>
+        </scene>
+        <!--Карта-->
+        <scene sceneID="F8B-Kx-8xu">
+            <objects>
+                <viewController id="y4y-33-vLF" customClass="MapViewController" customModule="EConcrete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wWl-TO-5Sc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Карта" id="Cvr-cw-una">
+                        <barButtonItem key="rightBarButtonItem" title="Выйти" id="Umh-mU-vYL">
+                            <connections>
+                                <segue destination="YH8-QW-ZBO" kind="modal" identifier="exitmap" id="Fz7-XY-hW9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNp-c7-5hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672" y="693"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sc6-gE-ZlZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9PS-ra-Gt0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Plu-Ks-4fb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P8r-Ww-AyP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="q4i-D9-lI1" kind="relationship" relationship="rootViewController" id="HZm-Lt-kox"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3U-j7-3hx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672" y="-859"/>
+        </scene>
+        <!--E-Concrete-->
+        <scene sceneID="GHY-VT-xgT">
+            <objects>
+                <viewController id="q4i-D9-lI1" customClass="SplashViewController" customModule="EConcrete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f4i-Ly-8hl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" id="PMt-cr-eo2">
+                                <rect key="frame" x="91" y="546" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="E-Concrete" prompt="Вход в систему " id="Be8-6X-2Ns"/>
+                    <connections>
+                        <segue destination="cRQ-yb-GSL" kind="modal" identifier="attempt" animates="NO" id="vlJ-fu-qP6"/>
+                        <segue destination="YH8-QW-ZBO" kind="modal" identifier="enter" id="Ohf-QQ-XiZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7mO-pw-LAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="-859"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="E2A-Jb-UMf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ddv-xT-oi5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TBy-ph-G40">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y4y-33-vLF" kind="relationship" relationship="rootViewController" id="Gge-B7-p99"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21e-gG-Kpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1108" y="693"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="md-logo.png" width="210" height="113"/>
+        <image name="reveal-icon.png" width="22" height="17"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fz7-XY-hW9"/>
+        <segue reference="BzB-gp-wTI"/>
+    </inferredMetricsTieBreakers>
+</document>
